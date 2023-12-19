@@ -1,0 +1,35 @@
+.main-about{
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin-right: 5%;
+    margin-left: 5%;
+    height: max-content;
+    margin-top: 15%;
+}
+
+.logo{
+    animation: logo-spin linear infinite 20s;
+}
+
+.a-1,
+.a-2,
+.a-3{
+    width: 30px;
+    height: 30px;
+    margin: 10px 10px;
+}
+
+.main-about p{
+    margin: 0 25%;
+}
+
+
+@keyframes logo-spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

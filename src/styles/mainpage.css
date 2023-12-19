@@ -1,0 +1,50 @@
+.main-block img{
+    width: 480px;
+    height: 380px;
+}
+
+.main-block{
+    display: block;
+}
+
+.block-1,
+.block-2,
+.block-3 {
+    display: flex;
+}
+
+.block-1{
+    justify-content: flex-start;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.block-2{
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.block-3{
+    margin: 5% 10%;
+}
+
+.p-1,
+.p-3{
+    padding-right: 300px;
+    padding-left: 30px;
+}
+
+.p-2{
+    padding-left: 300px;
+    padding-right: 30px;
+}
+
+.quotes-block{
+    margin-top: 100px;
+    text-align: center;
+    font-style: italic;
+}
+
+

@@ -1,0 +1,18 @@
+.main-search {
+    margin: 8% 50px;
+    text-align: center;
+    flex-direction: column;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.book-cover {
+    width: 128px; /* Установите желаемую ширину */
+    height: 192px; /* Установите желаемую высоту */
+    object-fit: cover; /* Обрезать изображение, чтобы оно вместилось в указанные размеры */
+    border-radius: 8px; /* Закругление углов, если нужно */
+}
+
+

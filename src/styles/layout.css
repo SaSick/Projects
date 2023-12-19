@@ -1,0 +1,198 @@
+.head{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+}
+
+.header{
+    display: flex;
+    margin: 0 10px;
+    align-items: center;
+}
+
+.header li{
+    list-style-type: none;
+}
+
+.header nav li a{
+    color: black;
+    text-decoration: none;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-sec{
+    display: inline-flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+hr{
+    margin: -50px auto 0;
+    padding: 0;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid #1f1209;
+    box-shadow: 0 20px 20px -20px #333;
+    width: 95%;
+}
+
+.header h1{
+    filter: drop-shadow(3px 3px 10px #2b2929);
+
+}
+
+.nav ul{
+    display: flex;
+
+}
+.nav li{
+    margin-left: 40px;
+    cursor: pointer;
+    filter: drop-shadow(3px 3px 10px #000000);
+    text-transform: uppercase;
+}
+
+.nav li:hover{
+    filter: none;
+}
+
+.user-sec li a{
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.user-sec li:hover{
+    filter: drop-shadow(3px 3px 10px #000000);
+}
+
+.inp {
+    margin-right: 200px;
+}
+
+.inp input{
+    padding: 4px 15px;
+    border: 1px solid #ddd; /* Цвет границы */
+    border-radius: 4px; /* Закругленные углы */
+    outline: none; /* Убираем рамку фокуса */
+
+}
+
+.inp button {
+    padding: 8px 15px;
+    margin-left: 15px;
+    background-color: #333; /* Цвет фона */
+    color: white; /* Цвет текста */
+    border: none; /* Убираем границу */
+    border-radius: 10px; /* Закругленные углы */
+    cursor: pointer;
+
+}
+
+.inp button:hover {
+    filter: drop-shadow(3px 3px 10px #2b2929);
+}
+
+
+.nav-li {
+    position: relative;
+}
+
+.nav-li:before,
+.nav-li:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color:black ;
+    transition: 0.3s ease;
+}
+
+.nav-li:after {
+    bottom: auto;
+    top: 0;
+}
+
+.nav-li:hover:before,
+.nav-li:hover:after {
+    width: 100%;
+}
+
+.user-sec li {
+    position: relative;
+}
+
+.user-sec li:before,
+.user-sec li:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color:black ;
+    transition: 0.3s ease;
+}
+
+.user-sec li:after {
+    bottom: auto;
+    top: 0;
+}
+
+.user-sec li:hover:before,
+.user-sec li:hover:after {
+    width: 70%;
+}
+
+.burger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.burger-menu div {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .nav-li {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .nav-active {
+        display: flex;
+    }
+}
+

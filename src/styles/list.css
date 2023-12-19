@@ -1,0 +1,51 @@
+/* styles/list.css */
+.main-list {
+    margin-bottom: 20px;
+}
+
+.main-list h3 {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.elem {
+    margin: 10px;
+    text-align: center;
+    position: relative; /* Добавлено для позиционирования подсказки */
+}
+
+.elem img {
+    width: 128px;
+    height: 192px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.elem p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.elem img:hover::after {
+    content: attr(title);
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+}

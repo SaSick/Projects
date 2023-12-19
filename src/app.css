@@ -1,0 +1,51 @@
+*{
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic,
+    "AppleGothic", sans-serif;
+
+}
+
+/*MyShelf styles*/
+
+.main-shelf{
+    margin-top: 10%;
+    text-align: center;
+}
+
+.info{
+    margin-top: 100px;
+}
+
+/*Login and Add button styles*/
+.main-log{
+    text-align: center;
+    display: block;
+    align-items: center;
+    margin: 15% 10%;
+    height: max-content;
+}
+
+.div-btn button,
+.main-log button {
+    padding: 8px 15px;
+    margin-left: 15px;
+    background-color: #333; /* Цвет фона */
+    color: white; /* Цвет текста */
+    border: none; /* Убираем границу */
+    border-radius: 10px; /* Закругленные углы */
+    cursor: pointer;
+
+}
+
+.div-btn button{
+    margin: 15px 0;
+}
+
+.main-log button:hover {
+    filter: drop-shadow(3px 3px 10px #2b2929);
+}
+
+/*Books styles*/
+
+.main-books{
+    margin-top: 8%;
+}
